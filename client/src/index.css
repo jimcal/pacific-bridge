@@ -206,3 +206,40 @@
     }
   }
 }
+
+/* Guided Scroll Narrative Styles */
+html {
+  scroll-behavior: smooth;
+}
+
+main section {
+  /* Generous breathing room between sections */
+  scroll-margin-top: 4rem; /* Account for fixed header */
+}
+
+/* Enhanced readability for long-form narrative */
+main p,
+main li {
+  @apply leading-relaxed;
+}
+
+/* Subtle dividers between sections */
+main section + section {
+  @apply border-t border-border/20;
+}
+
+/* Card spacing for visual rhythm */
+.space-y-8 > div,
+.space-y-8 > .card {
+  @apply rounded-lg;
+}
+
+/* Emphasis for key statistics */
+.text-4xl.font-bold {
+  @apply text-primary;
+}
+
+/* Section heading consistency */
+h2.font-serif {
+  @apply text-foreground;
+}
