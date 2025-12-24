@@ -75,6 +75,7 @@ export type LocaleContent = {
   "section-5": Section5;
   "section-6": Section6;
   "section-7": Section7;
+  "section-8": Section0;
   examples: Example[];
 };
 
@@ -89,6 +90,7 @@ export const content: Record<Lang, LocaleContent> = {
       "Participate",
       "Examples",
       "Closing",
+      "About",
     ],
     "section-0": {
       title: "Bridging Innovation & Manufacturing",
@@ -306,18 +308,29 @@ export const content: Record<Lang, LocaleContent> = {
       ],
       ctaContact: "Contact for Partnership",
       ctaBack: "Back to Start",
-      footer1: "Pacific Bridge | A strategic memo for Taiwanese public company leadership",
+      footer1: "The New Heights | A strategic memo for Taiwanese public company leadership",
       footer2: "Questions? Feedback? Please reach out to discuss.",
+    },
+    "section-8": {
+      title: "About",
+      lead: "About the author and how market data providers help capital markets.",
+      paragraphs: [
+        "I lead engineering teams that build marketing and operations data systems, integrating tools like Marketo and Salesforce so leads and customer data flow more accurately and quickly to the right people and processes.",
+        "I am an engineering leader with a software and data engineering background, long experience building high-traffic products and data platforms including large-scale real-time data systems. Recently I have led teams in e-commerce and financial data domains to make product, data, and business processes into scalable systems.",
+        "Our mission is to provide investors with reliable data on startups and private companies, and make private company performance comparable as benchmarks to speed and validate investment decisions.",
+        "Morningstar provides investment research, ratings, and market data to help investors with asset allocation and security selection. PitchBook provides private-market and startup data—tracking companies, financings, valuations, and transactions to support investment research and benchmarking.",
+        "In short: Morningstar covers public markets and funds research; PitchBook extends similar research and data into the private and startup world.",
+      ],
     },
   },
   "zh-Hant": {
-    nav: ["開場", "市場", "變化", "台灣", "框架", "參與", "案例", "結語"],
+    nav: ["開場", "市場", "變化", "台灣", "框架", "參與", "案例", "結語", "關於"],
     "section-0": {
-      title: "連結創新與製造",
+      title: "再造高峰｜連結創新與製造",
       lead: "從美國創投趨勢出發，直觀整理台灣企業的策略機會。",
       paragraphs: [
         "這不是投資建議。不是基金簡報。也不是銷售投影片。",
-        "這是一份長期往返矽谷與台灣的備忘，說明哪些事改變了、為何重要、以及你現在能做什麼。",
+        "長期往返矽谷與台灣的親身觀察，最近這幾年創投環境的變化、以及台灣企業的機會在哪裡。",
       ],
     },
     "section-1": {
@@ -344,7 +357,7 @@ export const content: Record<Lang, LocaleContent> = {
       intro: "三個核心變化：",
       items: [
         {
-          title: "1. 期待值更高",
+          title: "1. 募資標竿更高",
           text:
             "2020–2021 年，好的簡報與團隊或許就夠。現在投資人更要看到真實客戶、營收與 PMF 證據才會寫 A 輪支票。",
         },
@@ -354,12 +367,12 @@ export const content: Record<Lang, LocaleContent> = {
             "種子輪更小，A 輪從 18 個月拉長到 24–36 個月，逼迫早期團隊用更少資本證明自己。",
         },
         {
-          title: "3. 整體被投公司變少",
+          title: "3. 投資標的集中",
           text:
-            "總量趨平甚至下降，但超大額更大。拿到錢的更少，集中在 AI/金融科技/軟體的少數菁英。",
+            "創投資金趨平甚至下降，但超大額更大。導致拿到錢的更少，集中在 AI/金融科技/軟體的少數菁英。",
         },
       ],
-      quote: "「這不是價值判斷，是數據。2025 年的硬體/製造新創，處境和 2021 年已大不相同。」",
+      quote: "「這不是主觀意見，是真實數據。2025 年的硬體/製造新創，處境和 2021 年已大不相同。」",
     },
     "section-3": {
       title: "為什麼這件事與台灣上市櫃公司相關",
@@ -368,7 +381,7 @@ export const content: Record<Lang, LocaleContent> = {
         {
           title: "製造與量產能力",
           text:
-            "工廠、供應鏈、擴產經驗、成本控管。對硬體新創極其關鍵。你不只投資，而是解鎖量產。",
+            "工廠、供應鏈、擴產經驗、成本控管。對硬體新創極其關鍵。你不只投資，還能協助量產。",
         },
         {
           title: "B2B 客戶網路",
@@ -378,13 +391,13 @@ export const content: Record<Lang, LocaleContent> = {
         {
           title: "供應鏈與亞洲市場通道",
           text:
-            "當新創放眼美國以外，你作為通往亞洲的橋樑就是戰略資產，而非單純財務資產。",
+            "當新創放眼美國以外，台灣企業能作為通往亞洲的戰略盟友，而非單純提供資金的股東。",
         },
       ],
-      highlight: "新創需要資金；你更需要的是技術、位置與長期合作選項。",
+      highlight: "新創不只需要資金；更需要的是技術、戰略位置與長期合作的盟友。",
     },
     "section-4": {
-      title: "參與新創的正確框架",
+      title: "參與新創的正確心態",
       intro: "別只想報酬，請用三個視角思考：",
       cards: [
         {
@@ -491,8 +504,20 @@ export const content: Record<Lang, LocaleContent> = {
       ],
       ctaContact: "合作洽談",
       ctaBack: "回到開頭",
-      footer1: "Pacific Bridge｜寫給台灣上市櫃企業決策者的策略備忘",
+      footer1: "The New Heights｜寫給台灣上市櫃企業決策者的策略備忘",
       footer2: "有想法或建議？歡迎寫信交流。",
+    },
+    "section-8": {
+      title: "關於",
+      lead: "關於作者，以及資料提供方如何協助資本市場決策",
+      paragraphs: [
+        "我帶領工程團隊做行銷與營運資料系統，把像 Marketo / Salesforce 這類工具的資料與流程串起來，讓線索與客戶資訊更準、更快流到正確的人和流程。",
+        "我是軟體與資料工程背景的工程主管，長期做高流量產品與資料平台，包含大型即時資料處理系統；近年在電商/金融資料領域帶團隊，把產品、資料與商業流程做成可規模化的系統。",
+        "我們的任務是提供投資人新創/私募公司的可靠資料，並把 private company 的表現做成可比較的 benchmark，讓投資決策更快也更可驗證。",
+        "Morningstar（晨星）：提供投資研究、評等與市場資料，幫投資人做更好的資產配置與標的判讀。",
+        "PitchBook：提供私募市場與新創公司的資料平台，追蹤公司、募資、估值與交易，用來做投資研究與比較基準（benchmark）。",
+        "一句串起來：Morningstar 做公開市場與基金研究的資料與研究；PitchBook 把同一件事延伸到私募/新創世界。",
+      ],
     },
   },
 };

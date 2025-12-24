@@ -27,7 +27,7 @@ export default function SinglePage() {
       <header className="fixed top-0 left-0 right-0 z-40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b border-border/40">
         <div className="container max-w-5xl mx-auto px-4 h-16 flex items-center">
           <span className="font-serif text-xl font-bold tracking-tight text-primary">
-            Pacific Bridge
+            The New Heights
           </span>
           <div className="ml-auto flex items-center gap-3">
             <nav className="hidden md:flex gap-1 text-sm">
@@ -379,6 +379,27 @@ export default function SinglePage() {
             <div className="mt-16 pt-8 border-t border-border text-muted-foreground text-sm">
               <p>{t["section-7"].footer1}</p>
               <p className="mt-2 italic">{t["section-7"].footer2}</p>
+            </div>
+          </motion.div>
+        </section>
+
+        {/* About Section */}
+        <section id="section-8" className="min-h-screen flex items-center py-24 px-4">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            variants={sectionVariants}
+            viewport={{ once: true }}
+            className="max-w-3xl mx-auto w-full"
+          >
+            <h2 className="font-serif text-4xl font-bold mb-8 text-foreground">{t["section-8"].title}</h2>
+
+            <p className="text-xl text-muted-foreground mb-6 leading-relaxed">{t["section-8"].lead}</p>
+
+            <div className="space-y-6">
+              {t["section-8"].paragraphs.map((p, i) => (
+                <p key={i} className="text-lg text-muted-foreground">{p}</p>
+              ))}
             </div>
           </motion.div>
         </section>
