@@ -44,6 +44,12 @@
   --font-sans: "Lato", sans-serif;
 }
 
+/* Language-aware font fallbacks for CJK */
+html[lang="zh-Hant"] {
+  --font-sans: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", "Heiti TC", "Lato", sans-serif;
+  --font-serif: "Noto Serif TC", "Source Han Serif TC", "Playfair Display", serif;
+}
+
 :root {
   /* Pacific Bridge Theme: Deep Navy & Gold */
   /* Primary: Gold/Bronze */
