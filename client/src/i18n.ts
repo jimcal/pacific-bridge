@@ -39,6 +39,8 @@ type Section4 = {
 type Section5 = {
   title: string;
   intro: string;
+  advLabel: string;
+  tradeoffLabel: string;
   cards: {
     title: string;
     text: string;
@@ -198,6 +200,8 @@ export const content: Record<Lang, LocaleContent> = {
     "section-5": {
       title: "Practical Ways to Participate",
       intro: "Three paths. Choose based on your risk tolerance and internal capability.",
+      advLabel: "Advantages:",
+      tradeoffLabel: "Tradeoffs:",
       cards: [
         {
           title: "Path 1: LP in Funds",
@@ -308,173 +312,138 @@ export const content: Record<Lang, LocaleContent> = {
   },
   "zh-Hant": {
     nav: ["開場", "市場", "變化", "台灣", "框架", "參與", "案例", "結語"],
-    // Minimal: reuse EN copy for sections; localize examples and nav. Content owners can replace below incrementally.
     "section-0": {
-      title: "Bridging Innovation & Manufacturing",
-      lead:
-        "A candid view of U.S. venture capital trends and the strategic opportunity for Taiwanese enterprises.",
+      title: "連結創新與製造",
+      lead: "從美國創投趨勢出發，直觀整理台灣企業的策略機會。",
       paragraphs: [
-        "This is not investment advice. This is not a fund pitch. This is not a sales deck.",
-        "This is a memo from someone who has spent years bridging Silicon Valley and Taiwan—sharing what has changed, why it matters, and what doors are now open for you.",
+        "這不是投資建議。不是基金簡報。也不是銷售投影片。",
+        "這是一份長期往返矽谷與台灣的備忘，說明哪些事改變了、為何重要、以及你現在能做什麼。",
       ],
     },
     "section-1": {
-      title: "U.S. Market Snapshot",
-      lead:
-        "Capital has returned—but it is concentrated in fewer, larger deals, especially in AI.",
+      title: "美國市場速寫",
+      lead: "資金回來了，但集中在更少、規模更大的案子，特別是 AI。",
       bullets: [
+        { strong: "70% 的資金", text: "流向超大額募資（$100M+），集中度創新高。" },
         {
-          strong: "70% of all funding",
-          text: "now flows into mega-rounds ($100M+), the highest concentration in history.",
+          strong: "AI 主導超大額：",
+          text: "近三分之二的資金投入 AI 相關公司，重塑整體創投生態。",
         },
         {
-          strong: "AI dominates mega-rounds:",
-          text: "Two-thirds of mega-round capital goes to AI-related companies, reshaping the entire venture ecosystem.",
+          strong: "只有約 20% 的種子公司",
+          text: "能進入 A 輪（歷史約 35%）。這就是所謂的「種子擁擠」。",
         },
         {
-          strong: "Only 20% of seed companies",
-          text: "now graduate to Series A (down from 35% historically). This is the \"seed crunch.\"",
-        },
-        {
-          strong: "Higher bar for founders:",
-          text: "VCs now demand larger market sizes, proven business models, and lower cash burn. The easy money era is over.",
+          strong: "對創業者的門檻更高：",
+          text: "VC 更要求市場規模、商業驗證與更低的燒錢速度。「資金寬鬆」時代已結束。",
         },
       ],
     },
     "section-2": {
-      title: "What Changed Since Easy Money",
-      intro: "The venture landscape has shifted in three major ways:",
+      title: "在錢容易的年代之後，什麼變了",
+      intro: "三個核心變化：",
       items: [
         {
-          title: "1. Higher Expectations",
+          title: "1. 期待值更高",
           text:
-            "In 2020–2021, a great pitch and a solid team were enough. Today, VCs want to see real customers, real revenue, and proof of product-market fit before writing a Series A check.",
+            "2020–2021 年，好的簡報與團隊或許就夠。現在投資人更要看到真實客戶、營收與 PMF 證據才會寫 A 輪支票。",
         },
         {
-          title: "2. Longer Time Between Rounds",
+          title: "2. 輪次間距更長",
           text:
-            "Seed rounds are smaller. Series A takes 24–36 months instead of 18. This puts immense pressure on early-stage teams to prove themselves with minimal capital.",
+            "種子輪更小，A 輪從 18 個月拉長到 24–36 個月，逼迫早期團隊用更少資本證明自己。",
         },
         {
-          title: "3. Fewer Companies Funded Overall",
+          title: "3. 整體被投公司變少",
           text:
-            "Total VC funding has remained flat or declined, but mega-rounds are larger than ever. This means fewer companies get any VC money at all—and those that do are the elite few in AI, fintech, or software.",
+            "總量趨平甚至下降，但超大額更大。拿到錢的更少，集中在 AI/金融科技/軟體的少數菁英。",
         },
       ],
-      quote:
-        '"This is not judgment. This is data. A promising hardware or manufacturing startup in 2025 faces a very different landscape than one in 2021."',
+      quote: "「這不是價值判斷，是數據。2025 年的硬體/製造新創，處境和 2021 年已大不相同。」",
     },
     "section-3": {
-      title: "Why This Matters for Taiwanese Public Companies",
-      intro:
-        "Taiwanese enterprises have something U.S. startups desperately need—and now have more leverage than ever to provide it.",
+      title: "為什麼這件事與台灣上市櫃公司相關",
+      intro: "台灣企業擁有美國新創迫切需要的資源，而且現在議價能力更強。",
       items: [
         {
-          title: "Manufacturing Capability",
+          title: "製造與量產能力",
           text:
-            "Factories, supply chains, scale-up experience, and cost control. For a hardware startup, this is invaluable. You don't just invest—you unlock production.",
+            "工廠、供應鏈、擴產經驗、成本控管。對硬體新創極其關鍵。你不只投資，而是解鎖量產。",
         },
         {
-          title: "B2B Client Networks",
+          title: "B2B 客戶網路",
           text:
-            "Decades of relationships with global enterprises. A U.S. startup would spend years—and millions—to build what you already have. You can open doors in 90 days.",
+            "多年累積的全球企業關係。美國新創要花數年與上千萬美金才能建立的，你 90 天就能打開門。",
         },
         {
-          title: "Supply Chain & Asia Market Access",
+          title: "供應鏈與亞洲市場通道",
           text:
-            "As startups think beyond the U.S., your position as a bridge to Asia becomes critical. That's not a financial asset—that's a strategic asset.",
+            "當新創放眼美國以外，你作為通往亞洲的橋樑就是戰略資產，而非單純財務資產。",
         },
       ],
-      highlight:
-        "The startup needs the capital. You don't need their returns as much as you need the technology, the market position, and the partnership.",
+      highlight: "新創需要資金；你更需要的是技術、位置與長期合作選項。",
     },
     "section-4": {
-      title: "The Right Frame for Startup Participation",
-      intro: "Stop thinking about \"returns.\" Start thinking about these three lenses:",
+      title: "參與新創的正確框架",
+      intro: "別只想報酬，請用三個視角思考：",
       cards: [
         {
-          title: "1. Technology Radar",
+          title: "1. 技術雷達",
           text:
-            "Small investments in early-stage teams give you a front-row seat to what's coming next. You're not betting on returns—you're building early-warning systems for your industry.",
-          italic: "What emerging tech could disrupt or enhance your core business in 5–10 years?",
+            "小額投資早期團隊，買前排座位觀察未來。不是為了回報，而是打造產業的早期預警系統。",
+          italic: "哪個新興技術可能在 5–10 年內改變你的核心業務？",
         },
         {
-          title: "2. Second Growth Curve",
+          title: "2. 第二條成長曲線",
           text:
-            "Not every startup investment needs to go into your core business. Some are pure optionality—hedges against your industry flattening. They could become 10% of your revenue in 10 years, or they could provide zero revenue. The point is, you're holding an option.",
-          italic: "What adjacent markets could you expand into? Start small.",
+            "不一定要進核心事業，有些純粹是選擇權—為產業趨緩的對沖。可能 10 年後占 10% 營收，也可能 0%。重點是你手上有選項。",
+          italic: "可以切入哪些鄰近市場？從小做起。",
         },
         {
-          title: "3. Partnership / M&A Optionality",
+          title: "3. 合作 / 併購的選擇權",
           text:
-            "A small investment keeps you in the deal flow. If a startup succeeds and becomes relevant to your business, you can propose a partnership, a commercial deal, or an acquisition. If it doesn't, you've learned something.",
-          italic: "What acquisition targets could you identify years in advance?",
+            "小額持續跟案，若成功且與你相關，就能進一步談合作、商業合約，甚至併購；若不成，也累積了學習。",
+          italic: "有哪些潛在標的可以提前多年鎖定與追蹤？",
         },
       ],
-      highlightTop:
-        "The mental shift: You're not a venture capitalist. You're a strategist who deploys capital.",
+      highlightTop: "心態位移：你不是 VC，你是善用資本的策略人。",
       highlightBottom:
-        "Your job is not to pick winners. Your job is to stay informed, build relationships, and maintain optionality. If you make 10 small bets and one of them becomes a multi-billion dollar strategic asset, the other 9 were tuition.",
+        "任務不是挑贏家，而是保持資訊通、建立關係、維持選擇權。10 個小注其中一個成為數十億的戰略資產，其他 9 個就是學費。",
     },
     "section-5": {
-      title: "Practical Ways to Participate",
-      intro: "Three paths. Choose based on your risk tolerance and internal capability.",
+      title: "參與的實務做法",
+      intro: "三條路徑，依風險承受度與內部能力選擇。",
+      advLabel: "優點：",
+      tradeoffLabel: "取捨：",
       cards: [
         {
-          title: "Path 1: LP in Funds",
+          title: "路徑一：成為基金 LP",
           text:
-            "Invest $5–50M in reputable U.S. venture funds. Let professionals pick companies. You diversify across 20–30 companies. You learn. You have minimal day-to-day involvement.",
-          advantages: [
-            "Learning from world-class operators",
-            "Risk diversification",
-            "Low operational burden",
-          ],
-          tradeoffs: [
-            "Passive role (no direct influence)",
-            "Limited direct startup access",
-            "Long-term capital commitment",
-          ],
-          recommendation:
-            "Recommendation: Start with one fund in an area aligned to your business. Treat it as tuition in Silicon Valley.",
+            "投資 500–5,000 萬美元於可信賴的美國創投基金，讓專業團隊選案。分散至 20–30 家，邊投邊學，日常投入最低。",
+          advantages: ["向一流團隊學習", "風險分散", "營運負擔低"],
+          tradeoffs: ["較被動（影響力有限）", "直接接觸新創較少", "資金鎖定期長"],
+          recommendation: "建議：先從一支與本業相符的基金開始，把它當作在矽谷上課的學費。",
         },
         {
-          title: "Path 2: Strategic Follow-On",
+          title: "路徑二：策略型共同投資",
           text:
-            "Work with a lead fund or investor, and co-invest in specific deals. You pick companies that matter to your business—hardware, semiconductor, logistics, AI applications. $1–10M per deal. Direct dialogue with founders.",
-          advantages: [
-            "Select relevant companies",
-            "Direct founder relationships",
-            "Clear strategic alignment",
-          ],
-          tradeoffs: [
-            "Requires internal deal evaluation",
-            "Concentrated risk",
-            "More operational involvement",
-          ],
-          recommendation:
-            "Recommendation: Focus on startups that can leverage your manufacturing or supply chain strength. Think partnerships, not just returns.",
+            "與領投者合作，在特定案子跟投。挑與你有關的領域—硬體、半導體、物流、AI 應用。每案 100–1,000 萬美元，直接和創辦人互動。",
+          advantages: ["可選擇與業務高度相關的公司", "建立直接創辦人關係", "策略一致性清楚"],
+          tradeoffs: ["需要內部評估能力", "風險較集中", "營運投入較高"],
+          recommendation: "建議：優先找能運用你製造/供應鏈優勢的團隊，先談合作，再談報酬。",
         },
         {
-          title: "Path 3: Small, In-House CVC",
+          title: "路徑三：小型內部 CVC",
           text:
-            "Build a small venture committee (3–5 people) within your company. Deploy $20–100M total, with $500K–5M per company. Highly selective. Direct control. Long-term partnerships with founders.",
-          advantages: [
-            "Full strategic control",
-            "Direct founder partnerships",
-            "Deep internal knowledge",
-          ],
-          tradeoffs: [
-            "Requires strong internal talent",
-            "Operational complexity",
-            "Concentrated risk",
-          ],
-          recommendation:
-            "Recommendation: Only if you have the internal team and patience for a 10+ year horizon. Otherwise, outsource this to a fund.",
+            "在公司內建立 3–5 人的小型投資委員會。總額 2–10 億美元，每案 50–500 萬。極度嚴選、直接掌控、與創辦人建立長期夥伴關係。",
+          advantages: ["完整策略主導權", "直接的創辦人夥伴關係", "累積深厚內部知識"],
+          tradeoffs: ["需要強韌的內部人才", "營運複雜度提高", "風險集中"],
+          recommendation: "建議：只有在具備人才與 10 年以上耐心時再自建；否則外包給基金。",
         },
       ],
-      goldenRuleTitle: "The Golden Rule:",
+      goldenRuleTitle: "黃金法則：",
       goldenRuleText:
-        "Size each investment so that losing it doesn't hurt, but winning pays for ten losses. Think in terms of portfolio optionality, not home runs.",
+        "每筆金額都要小到輸了不會痛，但贏了能補十次。用選擇權組合思維，而不是全壘打思維。",
     },
     "section-6": {
       title: "案例研究",
@@ -513,13 +482,12 @@ export const content: Record<Lang, LocaleContent> = {
     ],
     "section-7": {
       title: "窗口正在打開",
-      quote:
-        '"The US has the innovation. Taiwan has the realization. Together, we don\'t just invest in the future—we build it."',
+      quote: "「美國擅長創新，台灣擅長實現。一起，不只是投資未來—而是把未來做出來。」",
       body:
-        "The venture ecosystem is consolidating. Capital is scarce. But opportunity is abundant for those who can bridge Silicon Valley's innovation with Taiwan's manufacturing and supply chain strength.",
+        "創投生態正在集中，資金稀缺；但能把矽谷創新與台灣製造與供應鏈連起來的人，機會反而更多。",
       paras: [
-        "This is not a call to be a venture capitalist. It's a call to be strategically patient, intellectually humble, and operationally disciplined.",
-        "Start small. Learn fast. Build relationships. Stay for the long term.",
+        "這不是要你成為創投，而是要在策略上耐心、在認知上謙卑、在執行上自律。",
+        "從小開始，快速學習，建立關係，走長期。",
       ],
       ctaContact: "合作洽談",
       ctaBack: "回到開頭",

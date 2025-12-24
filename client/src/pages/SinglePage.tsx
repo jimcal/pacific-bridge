@@ -266,7 +266,7 @@ export default function SinglePage() {
                     <p className="text-lg text-muted-foreground mb-6 leading-relaxed">{c.text}</p>
                     <div className="grid md:grid-cols-2 gap-8">
                       <div>
-                        <p className="font-bold text-green-700 mb-3">Advantages:</p>
+                        <p className="font-bold text-green-700 mb-3">{t["section-5"].advLabel}</p>
                         <ul className="text-muted-foreground space-y-2 text-sm">
                           {c.advantages.map((a, j) => (
                             <li key={j}>• {a}</li>
@@ -274,7 +274,7 @@ export default function SinglePage() {
                         </ul>
                       </div>
                       <div>
-                        <p className="font-bold text-red-700 mb-3">Tradeoffs:</p>
+                        <p className="font-bold text-red-700 mb-3">{t["section-5"].tradeoffLabel}</p>
                         <ul className="text-muted-foreground space-y-2 text-sm">
                           {c.tradeoffs.map((d, j) => (
                             <li key={j}>• {d}</li>
