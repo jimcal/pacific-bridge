@@ -26,7 +26,7 @@ function detectDefaultLang(): Lang {
   ) {
     return "zh-Hant";
   }
-  return "en";
+  return "zh-Hant";
 }
 
 export function LanguageProvider({ children }: { children: React.ReactNode }) {

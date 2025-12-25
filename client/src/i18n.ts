@@ -339,7 +339,7 @@ export const content: Record<Lang, LocaleContent> = {
       bullets: [
         { strong: "70% 的資金", text: "流向超大額募資（$100M+），集中度創新高。" },
         {
-          strong: "AI 主導超大額：",
+          strong: "AI 吸金主流：",
           text: "近三分之二的資金投入 AI 相關公司，重塑整體創投生態。",
         },
         {
