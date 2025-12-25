@@ -60,6 +60,7 @@ type Section7 = {
   body: string;
   paras: string[];
   ctaContact: string;
+  contactSubject: string;
   ctaBack: string;
   footer1: string;
   footer2: string;
@@ -306,6 +307,7 @@ export const content: Record<Lang, LocaleContent> = {
         "This is not a call to be a venture capitalist. It's a call to be strategically patient, intellectually humble, and operationally disciplined.",
         "Start small. Learn fast. Build relationships. Stay for the long term.",
       ],
+      contactSubject: "Partnership Inquiry",
       ctaContact: "Contact for Partnership",
       ctaBack: "Back to Start",
       footer1: "The New Heights | A strategic memo for Taiwanese public company leadership",
@@ -326,7 +328,7 @@ export const content: Record<Lang, LocaleContent> = {
   "zh-Hant": {
     nav: ["開場", "市場", "變化", "台灣", "框架", "參與", "案例", "結語", "關於"],
     "section-0": {
-      title: "再造高峰｜連結創新與製造",
+      title: "再造高峰｜連結創新與實務",
       lead: "從美國創投趨勢出發，直觀整理台灣企業的策略機會。",
       paragraphs: [
         "這不是投資建議。不是基金簡報。也不是銷售投影片。",
@@ -375,7 +377,7 @@ export const content: Record<Lang, LocaleContent> = {
       quote: "「這不是主觀意見，是真實數據。2025 年的硬體/製造新創，處境和 2021 年已大不相同。」",
     },
     "section-3": {
-      title: "為什麼這件事與台灣上市櫃公司相關",
+      title: "台灣企業決策者，為何要關注這些變化？",
       intro: "台灣企業擁有美國新創迫切需要的資源，而且現在議價能力更強。",
       items: [
         {
@@ -466,7 +468,7 @@ export const content: Record<Lang, LocaleContent> = {
     examples: [
       {
         title:
-          "Example A｜家登精密（3680，上櫃）× 迅得（6438，上市）— 產業鏈延伸（你已在用這個）",
+          "Example A｜家登精密（3680，上櫃）× 迅得（6438，上市）— 產業鏈延伸",
         lines: [
           "投資方：家登精密（3680，上櫃）",
           "標的：迅得（6438，上市）",
@@ -500,7 +502,8 @@ export const content: Record<Lang, LocaleContent> = {
         "成為創投並不是本業，而是要以耐心培養長期策略、謙卑的學習認知、嚴謹自律的執行。",
         "從小開始，快速學習，建立關係，眼光放長。",
       ],
-      ctaContact: "合作洽談",
+      contactSubject: "與我聯絡",
+      ctaContact: "與我聯絡",
       ctaBack: "回到開頭",
       footer1: "The New Heights｜寫給台灣上市櫃企業決策者的策略備忘",
       footer2: "有想法或建議？歡迎寫信交流。",

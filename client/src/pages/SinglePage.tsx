@@ -17,7 +17,8 @@ export default function SinglePage() {
   const t = content[lang];
 
   const handleContactClick = () => {
-    const mailtoLink = `mailto:contact@pacific-bridge.io?subject=Partnership Inquiry`;
+    const subject = t["section-7"].contactSubject || (lang === "en" ? "Partnership Inquiry" : "合作洽談");
+    const mailtoLink = `mailto:bedrock@itsj.im?subject=${encodeURIComponent(subject)}`;
     window.location.href = mailtoLink;
   };
 

@@ -30,7 +30,7 @@ function detectDefaultLang(): Lang {
 }
 
 export function LanguageProvider({ children }: { children: React.ReactNode }) {
-  const [lang, setLangState] = useState<Lang>(() => detectDefaultLang());
+  const [lang, setLangState] = useState<Lang>(() => "zh-Hant");
 
   useEffect(() => {
     try {
