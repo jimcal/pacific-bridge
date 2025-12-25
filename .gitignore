@@ -99,8 +99,10 @@ jspm_packages/
 # Temporary folders
 tmp/
 temp/
+.prompt-context/
 
 # Database
 *.db
 *.sqlite
 *.sqlite3
+
