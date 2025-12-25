@@ -360,13 +360,17 @@ export default function SinglePage() {
             </div>
 
             <div className="mt-12 flex flex-col sm:flex-row gap-4 justify-center">
-              <Button
-                onClick={handleContactClick}
-                size="lg"
-                className="text-lg px-8 py-6 rounded-full shadow-lg hover:shadow-xl transition-all"
-              >
-                <Mail className="mr-2 h-5 w-5" /> {t["section-7"].ctaContact}
-              </Button>
+              {(() => {
+                const subject = t["section-7"].contactSubject || (lang === "en" ? "Partnership Inquiry" : "合作洽談");
+                const mailtoLink = `mailto:bedrock@itsj.im?subject=${encodeURIComponent(subject)}`;
+                return (
+                  <Button asChild size="lg" className="text-lg px-8 py-6 rounded-full shadow-lg hover:shadow-xl transition-all">
+                    <a href={mailtoLink}>
+                      <Mail className="mr-2 h-5 w-5" /> {t["section-7"].ctaContact}
+                    </a>
+                  </Button>
+                );
+              })()}
               <Button
                 onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
                 variant="outline"
